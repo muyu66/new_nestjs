@@ -1,8 +1,17 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { AppModule } from './module/app.module';
+import { } from './middleware/index';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  await app.listen(3000);
+    const app = await NestFactory.create(AppModule);
+
+    // 设置全局前缀
+    // app.setGlobalPrefix('v1');
+
+    /**
+     * 加载全局中间件
+     */
+
+    await app.listen(3000);
 }
 bootstrap();

@@ -1,0 +1,1 @@
+{"version":3,"file":"service.module.js","sourceRoot":"","sources":["../../../src/module/service.module.ts"],"names":[],"mappings":";;;;;;;;AAAA,2CAAwC;AACxC,4CAA+C;AAC/C,6CAAyC;AAQzC,IAAa,aAAa,GAA1B;CAA8B,CAAA;AAAjB,aAAa;IANzB,eAAM,CAAC;QACJ,OAAO,EAAE,CAAC,sBAAS,CAAC;QACpB,SAAS,EAAE,CAAC,mBAAW,CAAC;QACxB,OAAO,EAAE,CAAC,mBAAW,CAAC;KACzB,CAAC;GAEW,aAAa,CAAI;AAAjB,sCAAa"}

@@ -1,0 +1,8 @@
+{
+    "database": {
+        "mongodb": {
+            "url": "mongodb://localhost/test"
+        },
+        "mysql": {}
+    }
+}

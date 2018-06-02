@@ -1,63 +1,47 @@
 {
-  "name": "nest-typescript-starter",
-  "version": "1.0.0",
-  "description": "Nest TypeScript starter repository",
-  "license": "MIT",
-  "scripts": {
-    "format": "prettier --write \"src/**/*.ts\"",
-    "start": "ts-node -r tsconfig-paths/register src/main.ts",
-    "start:dev": "nodemon",
-    "start:debug": "nodemon --config nodemon-debug.json",
-    "prestart:prod": "rimraf dist && tsc",
-    "start:prod": "node dist/main.js",
-    "start:hmr": "node dist/server",
-    "lint": "tslint -p tsconfig.json -c tslint.json",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cov": "jest --coverage",
-    "test:e2e": "jest --config ./test/jest-e2e.json",
-    "webpack": "webpack --config webpack.config.js"
-  },
-  "dependencies": {
-    "@nestjs/common": "^5.0.0",
-    "@nestjs/core": "^5.0.0",
-    "@nestjs/microservices": "^5.0.0",
-    "@nestjs/testing": "^5.0.0",
-    "@nestjs/websockets": "^5.0.0",
-    "reflect-metadata": "^0.1.12",
-    "rxjs": "^6.0.0",
-    "typescript": "^2.8.0"
-  },
-  "devDependencies": {
-    "@types/express": "^4.0.39",
-    "@types/jest": "^21.1.8",
-    "@types/node": "^9.3.0",
-    "@types/supertest": "^2.0.4",
-    "jest": "^21.2.1",
-    "nodemon": "^1.14.1",
-    "prettier": "^1.11.1",
-    "rimraf": "^2.6.2",
-    "supertest": "^3.0.0",
-    "ts-jest": "^21.2.4",
-    "ts-loader": "^4.1.0",
-    "ts-node": "^6.0.0",
-    "tsconfig-paths": "^3.3.1",
-    "tslint": "5.3.2",
-    "webpack": "^4.2.0",
-    "webpack-cli": "^2.0.13",
-    "webpack-node-externals": "^1.6.0"
-  },
-  "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "ts"
-    ],
-    "rootDir": "src",
-    "testRegex": ".spec.ts$",
-    "transform": {
-      "^.+\\.(t|j)s$": "ts-jest"
+    "name": "new_nestjs",
+    "version": "0.0.1",
+    "description": "new_nestjs",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc",
+        "dev": "ts-node -r tsconfig-paths/register src/main.ts",
+        "start": "node ./build/src/main.js",
+        "test": "tsc && jest"
     },
-    "coverageDirectory": "../coverage"
-  }
+    "dependencies": {
+        "@nestjs/common": "^5.0.1",
+        "@nestjs/core": "^5.0.0",
+        "@nestjs/mongoose": "^5.0.0",
+        "@nestjs/typeorm": "^5.0.0",
+        "class-transformer": "^0.1.9",
+        "class-validator": "^0.8.5",
+        "config": "^1.30.0",
+        "lodash": "^4.17.10",
+        "mongodb": "^3.0.9",
+        "mongoose": "^5.1.3",
+        "reflect-metadata": "^0.1.12",
+        "rxjs": "^6.2.0",
+        "typeorm": "^0.2.6",
+        "typescript": "^2.8.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.0.39",
+        "@types/jest": "^23.0.0",
+        "@types/lodash": "^4.14.109",
+        "@types/mongoose": "^5.0.15",
+        "@types/node": "^9.3.0",
+        "@types/supertest": "^2.0.4",
+        "jest": "^23.1.0",
+        "ts-loader": "^4.1.0",
+        "ts-node": "^6.0.0",
+        "tsconfig-paths": "^3.3.1",
+        "tslint": "5.3.2"
+    },
+    "jest": {
+        "moduleFileExtensions": [
+            "js"
+        ],
+        "rootDir": "build/test"
+    }
 }

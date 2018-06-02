@@ -390,3 +390,6 @@ Temporary Items
 docker-compose.yml
 .env
 dist
+.history
+config/*
+!config/default.example.json

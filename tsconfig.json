@@ -10,11 +10,12 @@
     "experimentalDecorators": true,
     "target": "es6",
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": "./build",
     "baseUrl": "./src"
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "test"
   ],
   "exclude": [
     "node_modules",
