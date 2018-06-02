@@ -393,3 +393,4 @@ dist
 .history
 config/*
 !config/default.example.json
+build
