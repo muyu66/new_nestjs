@@ -6,6 +6,8 @@ export namespace IAttribute {
 
     }
 
+    export interface MTest extends ITest, Document {
+    }
     export interface ITest extends Base {
         name: string;
     }

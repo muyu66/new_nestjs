@@ -1,1 +1,6 @@
 Building...
+
+分支说明
+mainline: 将实时同步 Nestjs 的最新版本
+stable: 同步被认为是稳定的 Nestjs 版本
+longterm: ...
