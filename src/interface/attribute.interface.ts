@@ -2,7 +2,7 @@ import { Document } from 'mongoose';
 
 export namespace IAttribute {
 
-    interface Base extends Document {
+    interface Base {
 
     }
 
