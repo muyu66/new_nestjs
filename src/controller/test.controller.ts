@@ -26,4 +26,9 @@ export class TestController extends BaseController {
         return await this.testService.findAll();
     }
 
+    @Get('/string')
+    public async findString() {
+        return 'ok';
+    }
+
 }

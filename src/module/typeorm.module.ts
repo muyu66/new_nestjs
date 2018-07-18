@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import * as config from 'config';
-import { TestEntity } from 'database/entity';
+import { TestEntity } from '../database/entity';
 
 const { host, port, username, password, database } = config.get('database.mysql');
 

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { BaseDao } from './base.dao';
 import { InjectModel } from '@nestjs/mongoose';
-import { IType, IAttribute } from 'interface';
+import { IType, IAttribute } from '../interface';
 import { Model } from 'mongoose';
 
 @Injectable()

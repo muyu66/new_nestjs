@@ -7,7 +7,7 @@
         "build": "tsc",
         "dev": "ts-node src/main.ts",
         "start": "node ./build/src/main.js",
-        "test": "tsc && jest"
+        "test": "jest"
     },
     "dependencies": {
         "@nestjs/common": "^5.1.0",
@@ -28,6 +28,7 @@
         "reflect-metadata": "^0.1.12",
         "rxjs": "^6.2.2",
         "supertest": "^3.1.0",
+        "ts-jest": "^23.0.1",
         "typeorm": "^0.2.7",
         "typescript": "^2.9.2"
     },
@@ -49,8 +50,16 @@
     },
     "jest": {
         "moduleFileExtensions": [
-            "js"
+            "js",
+            "json",
+            "ts"
         ],
-        "rootDir": "build/test"
+        "rootDir": "test",
+        "testRegex": ".spec.ts$",
+        "transform": {
+            "^.+\\.(t|j)s$": "ts-jest"
+        },
+        "coverageDirectory": "../coverage",
+        "testEnvironment": "node"
     }
 }
