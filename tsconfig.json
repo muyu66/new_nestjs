@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "declaration": true,
         "noImplicitAny": false,
         "removeComments": true,
         "noLib": false,
@@ -10,13 +9,14 @@
         "experimentalDecorators": true,
         "target": "es6",
         "outDir": "./build",
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "pretty": true,
+        "sourceMap": true
     },
     "include": [
         "src/**/*"
     ],
     "exclude": [
-        "node_modules",
-        "**/*.spec.ts"
+        "node_modules"
     ]
 }

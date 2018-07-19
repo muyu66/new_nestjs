@@ -16,9 +16,9 @@ describe('Test', () => {
         await app.init();
     });
 
-    it('/GET /test', () => {
-        return request(app.getHttpServer())
-            .get('/test/string')
+    it('/GET /tests', async () => {
+        return await request(app.getHttpServer())
+            .get('/tests/string')
             .expect(200)
             .expect((res) => {
                 expect(res.body === 'ok').toBeTruthy();

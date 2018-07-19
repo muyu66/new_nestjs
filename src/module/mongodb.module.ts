@@ -6,7 +6,9 @@ import { TestScheme } from '../database/scheme';
 const mongodb: { url: string } = config.get('database.mongodb');
 
 const Orm = [
-    MongooseModule.forRoot(mongodb.url),
+    MongooseModule.forRoot(mongodb.url, {
+        useNewUrlParser: true,
+    }),
     MongooseModule.forFeature([
         { name: 'test', schema: TestScheme },
     ]),
