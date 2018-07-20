@@ -7,6 +7,13 @@
         "no-unused-expression": true
     },
     "rules": {
+        "whitespace": false,
+        "jsdoc-format": true,
+        "prefer-for-of": false,
+        "forin": false,
+        "align": true,
+        "new-parens": false,
+        "no-angle-bracket-type-assertion": false,
         "no-console": false,
         "no-namespace": false,
         "eofline": false,
@@ -23,7 +30,7 @@
         ],
         "max-line-length": [
             true,
-            150
+            280
         ],
         "member-ordering": [
             false
@@ -40,9 +47,7 @@
         "arrow-parens": false,
         "object-literal-sort-keys": false,
         "no-unused-expression": false,
-        "max-classes-per-file": [
-            false
-        ],
+        "max-classes-per-file": false,
         "variable-name": [
             false
         ],

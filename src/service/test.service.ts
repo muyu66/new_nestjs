@@ -18,4 +18,8 @@ export class TestService extends BaseService {
         return await this.testDao.findAll();
     }
 
+    public async findString() {
+        return { status: 'ok' };
+    }
+
 }

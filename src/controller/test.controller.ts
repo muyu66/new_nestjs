@@ -28,7 +28,7 @@ export class TestController extends BaseController {
 
     @Get('/string')
     public async findString() {
-        return 'ok';
+        return await this.testService.findString();
     }
 
 }
