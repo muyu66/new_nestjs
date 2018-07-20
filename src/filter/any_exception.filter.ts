@@ -20,6 +20,8 @@ export class AnyExceptionFilter implements ExceptionFilter {
             statusCode = exception.response.data.statusCode;
             message = exception.response.data.message;
         } else {
+            console.log(exception);
+
             statusCode = 500;
             message = '服务故障';
         }

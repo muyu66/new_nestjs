@@ -1,0 +1,19 @@
+type Test {
+  id: String!
+  contents: [Content]
+}
+
+type Content {
+  id: String!
+  testId: String
+  text: String
+}
+
+type Query {
+  tests: [Test]
+  test(id: String!): Test
+}
+
+type Mutation {
+  updateContentText(contentId: String!): Content
+}
